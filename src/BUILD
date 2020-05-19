@@ -14,6 +14,11 @@ java_proto_library(
     deps = [":person_proto"],
 )
 
+java_library(
+    name = "person_java",
+    deps = [":person_java_proto"],
+)
+
 # Convention:
 # A java_lite_proto_library that wraps a proto_library named foo_proto
 # should be called foo_java_proto_lite.
